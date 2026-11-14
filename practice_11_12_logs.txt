@@ -1,0 +1,104 @@
+=== ЛОГ СБОРКИ BCC ===
+[  0%] Building CXX object src/cc/CMakeFiles/bcc-loader-static.dir/bcc_syms.cc.o
+[  1%] Building C object src/cc/CMakeFiles/bcc-loader-static.dir/bcc_elf.c.o
+[  2%] Building C object src/cc/CMakeFiles/bcc-loader-static.dir/bcc_perf_map.c.o
+[  3%] Building C object src/cc/CMakeFiles/bcc-loader-static.dir/bcc_proc.c.o
+[  4%] Building C object src/cc/CMakeFiles/bcc-loader-static.dir/bcc_zip.c.o
+[  4%] Building CXX object src/cc/CMakeFiles/bcc-loader-static.dir/common.cc.o
+[  5%] Linking CXX static library libbcc-loader-static.a
+[  5%] Built target bcc-loader-static
+[  5%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf.c.o
+[  6%] Building C object src/cc/CMakeFiles/bpf-static.dir/perf_reader.c.o
+[  7%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/bpf.c.o
+[  8%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/bpf_prog_linfo.c.o
+[  9%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/btf.c.o
+[  9%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/btf_dump.c.o
+[ 10%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/btf_iter.c.o
+[ 11%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/btf_relocate.c.o
+[ 12%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/elf.c.o
+[ 13%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/features.c.o
+[ 14%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/gen_loader.c.o
+[ 14%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/hashmap.c.o
+[ 15%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/libbpf.c.o
+/home/sa/bcc/src/cc/libbpf/src/libbpf.c: In function ‘probe_kern_syscall_wrapper’:
+/home/sa/bcc/src/cc/libbpf/src/libbpf.c:11777:38: warning: ‘%s’ directive output may be truncated writing up to 63 bytes into a region of size between 33 and 53 [-Wformat-truncation=]
+  snprintf(buf, buf_sz, "libbpf_%d_%d_%s_0x%zx", getpid(),
+                                      ^~
+/home/sa/bcc/src/cc/libbpf/src/libbpf.c:11905:63:
+   gen_probe_legacy_event_name(probe_name, sizeof(probe_name), syscall_name, 0);
+                                                               ~~~~~~~~~~~~
+/home/sa/bcc/src/cc/libbpf/src/libbpf.c:11777:2: note: ‘snprintf’ output between 16 and 99 bytes into a destination of size 64
+  snprintf(buf, buf_sz, "libbpf_%d_%d_%s_0x%zx", getpid(),
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    __sync_fetch_and_add(&index, 1), name, offset);
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 16%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/libbpf_probes.c.o
+[ 17%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/libbpf_utils.c.o
+[ 18%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/linker.c.o
+[ 18%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/netlink.c.o
+/home/sa/bcc/src/cc/libbpf/src/netlink.c: In function ‘bpf_xdp_query’:
+/home/sa/bcc/src/cc/libbpf/src/netlink.c:488:20: warning: ‘id’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  req.nh.nlmsg_type = id;
+  ~~~~~~~~~~~~~~~~~~^~~~
+[ 19%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/nlattr.c.o
+[ 20%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/relo_core.c.o
+[ 21%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/ringbuf.c.o
+[ 22%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/strset.c.o
+[ 22%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/usdt.c.o
+[ 23%] Building C object src/cc/CMakeFiles/bpf-static.dir/libbpf/src/zip.c.o
+[ 24%] Building CXX object src/cc/CMakeFiles/bpf-static.dir/bcc_syms.cc.o
+[ 25%] Building C object src/cc/CMakeFiles/bpf-static.dir/bcc_elf.c.o
+[ 26%] Building C object src/cc/CMakeFiles/bpf-static.dir/bcc_perf_map.c.o
+[ 26%] Building C object src/cc/CMakeFiles/bpf-static.dir/bcc_proc.c.o
+[ 27%] Building C object src/cc/CMakeFiles/bpf-static.dir/bcc_zip.c.o
+[ 28%] Building CXX object src/cc/CMakeFiles/bpf-static.dir/common.cc.o
+[ 29%] Building CXX object src/cc/CMakeFiles/bpf-static.dir/usdt/usdt.cc.o
+[ 30%] Building CXX object src/cc/CMakeFiles/bpf-static.dir/usdt/usdt_args.cc.o
+[ 30%] Linking CXX static library libbcc_bpf.a
+[ 30%] Built target bpf-static
+[ 31%] Building CXX object src/cc/frontends/clang/CMakeFiles/clang_frontend-objects.dir/loader.cc.o
+In file included from /usr/lib/llvm-11/include/clang/AST/RecursiveASTVisitor.h:23,
+                 from /home/sa/bcc/src/cc/frontends/clang/b_frontend_action.h:23,
+                 from /home/sa/bcc/src/cc/frontends/clang/loader.cc:57:
+/usr/lib/llvm-11/include/clang/AST/DeclOpenMP.h:97:1: warning: multi-line comment [-Wcomment]
+ /// #pragma omp declare reduction (foo : int,float : omp_out += omp_in) \
+ ^
+In file included from /usr/lib/llvm-11/include/clang/AST/RecursiveASTVisitor.h:16,
+                 from /home/sa/bcc/src/cc/frontends/clang/b_frontend_action.h:23,
+                 from /home/sa/bcc/src/cc/frontends/clang/loader.cc:57:
+/usr/lib/llvm-11/include/clang/AST/Attr.h: In static member function ‘static clang::ParamIdx clang::ParamIdx::deserialize(clang::ParamIdx::SerialType)’:
+/usr/lib/llvm-11/include/clang/AST/Attr.h:262:17: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     ParamIdx P(*reinterpret_cast<ParamIdx *>(&S));
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/llvm-11/include/clang/AST/Attr.h:262:17: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+make[2]: *** wait: Нет дочерних процессов.  Останов.
+make[2]: *** Ожидание завершения заданий…
+make[2]: *** wait: Нет дочерних процессов.  Останов.
+make[1]: *** wait: Нет дочерних процессов.  Останов.
+make[1]: *** Ожидание завершения заданий…
+make[1]: *** wait: Нет дочерних процессов.  Останов.
+make: *** wait: Нет дочерних процессов.  Останов.
+make: *** Ожидание завершения заданий…
+make: *** wait: Нет дочерних процессов.  Останов.
+
+
+=== ЛОГ УСТАНОВКИ ===
+Лог установки не найден
+
+
+=== ЛОГ ОШИБКИ PYTHON ===
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 668, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 638, in _load_backward_compatible
+  File "/usr/lib/python3/dist-packages/bcc-0.37.0+34d9495a-py3.7.egg/bcc/__init__.py", line 27, in <module>
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 668, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 638, in _load_backward_compatible
+  File "/usr/lib/python3/dist-packages/bcc-0.37.0+34d9495a-py3.7.egg/bcc/libbcc.py", line 17, in <module>
+  File "/usr/lib/python3.7/ctypes/__init__.py", line 356, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /lib/x86_64-linux-gnu/libbcc.so.0: undefined symbol: _Z18getPollyPluginInfov
