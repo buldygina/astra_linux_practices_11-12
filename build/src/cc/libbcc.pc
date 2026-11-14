@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib/x86_64-linux-gnu
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+
+compatdir=${includedir}/bcc/compat
+
+Name: libbcc
+Version: 0.37.0+34d9495a
+Description: BCC Program library
+Requires:
+Libs: -L${libdir} -lbcc
+Cflags: -I${includedir} -I${compatdir}

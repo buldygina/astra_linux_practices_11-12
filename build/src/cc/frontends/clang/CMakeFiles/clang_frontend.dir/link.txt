@@ -1,0 +1,2 @@
+/usr/bin/ar qc libclang_frontend.a  CMakeFiles/clang_frontend-objects.dir/loader.cc.o CMakeFiles/clang_frontend-objects.dir/b_frontend_action.cc.o CMakeFiles/clang_frontend-objects.dir/tp_frontend_action.cc.o CMakeFiles/clang_frontend-objects.dir/kbuild_helper.cc.o
+/usr/bin/ranlib libclang_frontend.a

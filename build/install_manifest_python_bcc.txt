@@ -1,0 +1,1 @@
+/usr/lib/python3/dist-packages/bcc-0.37.0+34d9495a-py3.7.egg

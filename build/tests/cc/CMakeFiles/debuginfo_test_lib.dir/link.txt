@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wall  -Wno-unused-result -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libdebuginfo_test_lib.so -o libdebuginfo_test_lib.so CMakeFiles/debuginfo_test_lib.dir/debuginfo_test_lib.cc.o 
